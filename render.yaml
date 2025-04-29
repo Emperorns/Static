@@ -1,0 +1,7 @@
+services:
+  - name: telegram-netflix-service
+    type: web
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
